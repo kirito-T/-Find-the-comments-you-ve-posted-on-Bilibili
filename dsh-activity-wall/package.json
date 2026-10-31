@@ -1,0 +1,22 @@
+{
+  "name": "dsh-activity-wall",
+  "version": "0.1.0",
+  "description": "把一个 B 站账号的评论和观看记录生成一个本地网页（活动墙）：点卡片直接跳视频 / 跳到那条评论。",
+  "type": "module",
+  "main": "index.mjs",
+  "files": [
+    "index.mjs",
+    "templates/"
+  ],
+  "keywords": [
+    "aurabot",
+    "dsh",
+    "bilibili",
+    "dashboard",
+    "activity-wall"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

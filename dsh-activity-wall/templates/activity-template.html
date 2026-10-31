@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0f1115; color: #e8e8ee; font: 15px/1.65 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  header { position: sticky; top: 0; background: rgba(15,17,21,.95); backdrop-filter: blur(8px); padding: 16px 22px; border-bottom: 1px solid #23262e; z-index: 9; }
+  h1 { margin: 0 0 6px; font-size: 20px; font-weight: 600; letter-spacing: .5px; }
+  .sub { color: #8b90a0; font-size: 13px; }
+  nav { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  nav a { text-decoration: none; font-size: 13px; padding: 6px 13px; border-radius: 999px; background: #171a21; border: 1px solid #2a2e38; color: #b9becd; }
+  nav a:hover { border-color: #4b6bff; color: #fff; }
+  section { padding: 6px 22px 10px; scroll-margin-top: 130px; }
+  h2 { font-size: 16px; font-weight: 600; margin: 22px 0 12px; color: #cbd5e1; display: flex; align-items: baseline; gap: 10px; }
+  h2 .n { font-size: 12px; color: #64748b; font-weight: 400; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  a.card { display: block; text-decoration: none; color: inherit; background: #151821; border: 1px solid #23262e; border-radius: 14px; padding: 16px; transition: .15s; position: relative; }
+  a.card:hover { border-color: #4b6bff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(75,107,255,.15); }
+  a.card.watch:hover { border-color: #38bdf8; box-shadow: 0 8px 24px rgba(56,189,248,.15); }
+  a.card.special { border-color: #1e3a4d; background: #121a20; }
+  .t { font-size: 14px; color: #9aa2b8; margin: 0 64px 8px 0; }
+  .txt { font-size: 15px; color: #e8e8ee; white-space: pre-wrap; word-break: break-word; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 11px; padding: 2px 9px; border-radius: 999px; background: #232a3d; color: #8fa4ff; }
+  .tag.mention { background: #3a2450; color: #d9a6ff; }
+  .tag.frame { background: #2a1e38; color: #d8b4fe; }
+  .tag.owner { background: #3a2a12; color: #fbbf24; }
+  .tag.trace { background: #1f2530; color: #94a3b8; }
+  .meta { margin-top: 10px; font-size: 12px; color: #6e7385; display: flex; gap: 12px; flex-wrap: wrap; }
+  .loc { font-size: 12px; }
+  .loc.ok { color: #4ade80; }
+  .loc.no { color: #f87171; }
+  .hint { color: #6f8bff; }
+  .prog { color: #fbbf24; }
+  .empty { color: #6e7385; padding: 36px; text-align: center; grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>__TITLE__</h1>
+  <div class="sub">__COUNT__</div>
+  <nav>
+    <a href="#comments">评论 __C_N__</a>
+    <a href="#special">特意看的 __S_N__</a>
+    <a href="#rest">刷到的 __R_N__</a>
+  </nav>
+</header>
+<section id="comments">
+  <h2>发过的评论 <span class="n">__C_N__</span></h2>
+  <div class="grid">__COMMENTS__</div>
+</section>
+<section id="special">
+  <h2>特意看的 <span class="n">__S_N__</span></h2>
+  <div class="grid">__SPECIAL__</div>
+</section>
+<section id="rest">
+  <h2>刷到的 <span class="n">__R_N__</span></h2>
+  <div class="grid">__REST__</div>
+</section>
+</body>
+</html>
